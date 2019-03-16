@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class MemmoryMappedFileReader implements BenchmarkFileReader {
+public class MemoryMappedFileReader implements BenchmarkFileReader {
 
     @Override
     public void readFile(String filePath) throws IOException {

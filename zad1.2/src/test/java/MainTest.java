@@ -1,30 +1,20 @@
 import fileAccess.BenchmarkFileReader;
 import fileAccess.BufferedInputStreamReader;
 import fileAccess.BufferedRead;
-import fileAccess.MemmoryMappedFileReader;
+import fileAccess.NioReader;
+import fileAccess.MemoryMappedFileReader;
 import org.apache.commons.lang3.time.StopWatch;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 class MainTest {
 
-    private static final int ALLOCATION_BLOCK_SIZE = 512;
     private static String FILE_PATH = "src/main/resources/largeFile.txt";
     private static int FILE_SIZE_MB = 800;
     private StopWatch stopWatch;
@@ -83,7 +73,7 @@ class MainTest {
     void benchmarkMemoryMappedFileReadPerformance() throws IOException {
         stopWatch.start();
 
-        benchmarkFileReader = new MemmoryMappedFileReader();
+        benchmarkFileReader = new MemoryMappedFileReader();
         benchmarkFileReader.readFile(FILE_PATH);
 
         stopWatch.stop();
@@ -92,55 +82,19 @@ class MainTest {
         prettyOutput("MemoryMappedFileReade", readingTime);
     }
 
-
     @Test
-    void benchmarkNewBufferedReadReadPerformance() throws IOException {
-
+    void benchmarkFileChannelReadPerformance() throws IOException {
         stopWatch.start();
 
-        final BufferedReader bufferedReader = Files.newBufferedReader(Paths.get(FILE_PATH), Charset.defaultCharset());
+        benchmarkFileReader = new NioReader();
+        benchmarkFileReader.readFile(FILE_PATH);
 
-//        while (bufferedReader.read() != -1) {
-//        }
-        String line;
-        while ((line = bufferedReader.readLine()) != null) {
-            System.out.println(line);
-
-        }
         stopWatch.stop();
+
         long readingTime = stopWatch.getTime();
-        prettyOutput("NewBufferedRead", readingTime);
+        prettyOutput("NioReader", readingTime);
     }
 
-//
-//    @Test
-//    void benchmarkChannelRead() {
-//        stopWatch.start();
-//
-//        File file = new File(FILE_PATH);
-//        try {
-//            InputStream inputStream = new FileInputStream(file);
-//            ReadableByteChannel byteChannel = Channels.newChannel(inputStream);
-//            ByteBuffer byteBuffer = ByteBuffer.allocate(ALLOCATION_BLOCK_SIZE);
-//
-//todo verify if ok
-//            while (byteChannel.read(byteBuffer) > 0) {
-//                byteBuffer.flip();
-//                while (byteBuffer.hasRemaining()) {
-//                    char ch = (char) byteBuffer.get();
-//                }
-//            }
-//
-//            stopWatch.stop();
-//            long readingTime = stopWatch.getTime();
-//            prettyOutput("ChannelReader", readingTime);
-//
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
 
     private void prettyOutput(final String methodName, final long timeRun) {
 
