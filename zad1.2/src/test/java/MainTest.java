@@ -1,6 +1,7 @@
 import fileAccess.BenchmarkFileReader;
 import fileAccess.BufferedInputStreamReader;
 import fileAccess.BufferedRead;
+import fileAccess.FileInputStreamReader;
 import fileAccess.NioReader;
 import fileAccess.MemoryMappedFileReader;
 import org.apache.commons.lang3.time.StopWatch;
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -94,6 +96,21 @@ class MainTest {
         long readingTime = stopWatch.getTime();
         prettyOutput("NioReader", readingTime);
     }
+
+    @Test
+    @Disabled
+    void benchmarkFileInputStreamPerformance() throws IOException {
+        stopWatch.start();
+
+        benchmarkFileReader = new FileInputStreamReader();
+        benchmarkFileReader.readFile(FILE_PATH);
+
+        stopWatch.stop();
+
+        long readingTime = stopWatch.getTime();
+        prettyOutput("FileInputStreamReader", readingTime);
+    }
+
 
 
     private void prettyOutput(final String methodName, final long timeRun) {

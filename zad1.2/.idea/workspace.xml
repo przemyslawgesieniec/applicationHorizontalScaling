@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="896779fb-b44a-4155-a8fe-f7bd39ea0ce9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fileAccess/NioReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fileAccess/FileInputStreamReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zad1.1/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zad1.1/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zad1.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zad1.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zad1.1/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zad1.1/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fileAccess/MemmoryMappedFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileAccess/MemoryMappedFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,44 +29,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="437">
+              <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/NioReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/Buffer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="327" column="24" selection-start-line="327" selection-start-column="24" selection-end-line="327" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/channels/FileChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
+        <entry file="file://$PROJECT_DIR$/src/main/resources/largeFile.txt">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="289">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -81,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/file/Files.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="63631">
               <caret line="3778" column="64" selection-start-line="3778" selection-start-column="59" selection-end-line="3778" selection-end-column="64" />
             </state>
           </provider>
@@ -99,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/BufferedRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="43" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -108,8 +83,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/BufferedInputStreamReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/FileInputStreamReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/smallFile.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="88" selection-start-column="88" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -150,20 +152,22 @@
         <option value="$PROJECT_DIR$/zad1.2.iml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fileAccess/BenchmarkFileReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fileAccess/BufferedInputStreamReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/fileAccess/BufferedRead.java" />
         <option value="$PROJECT_DIR$/src/main/java/fileAccess/MemmoryMappedFileReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/fileAccess/MemoryMappedFileReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fileAccess/FileChannelReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/fileAccess/NioReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fileAccess/BufferedInputStreamReader.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/smallFile.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/fileAccess/FileInputStreamReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="940" />
-    <option name="width" value="1627" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="806" />
+    <option name="width" value="1760" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,7 +175,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,15 +235,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552775144459" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552811641560" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zad1.1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -267,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.MainTest.benchmarkFileInputStreamPerformance">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zad1.2" />
       <option name="PACKAGE_NAME" value="" />
@@ -286,21 +291,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.benchmarkChannelRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zad1.2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="benchmarkChannelRead" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainTest.benchmarkFileChannelReadPerformance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zad1.2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <option name="METHOD_NAME" value="benchmarkFileChannelReadPerformance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.benchmarkFileInputStreamPerformance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zad1.2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="benchmarkFileInputStreamPerformance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -318,11 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.benchmarkFileInputStreamPerformance" />
         <item itemvalue="JUnit.MainTest.benchmarkFileChannelReadPerformance" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.benchmarkBufferedInputStreamReadPerformance" />
         <item itemvalue="JUnit.MainTest.benchmarkNewBufferedReadReadPerformance" />
-        <item itemvalue="JUnit.MainTest.benchmarkChannelRead" />
       </list>
     </recent_temporary>
   </component>
@@ -344,28 +349,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552731985152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="readers benchmark done">
+      <created>1552775226355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552775226355</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_benchmarkChannelRead - 2019.03.16 at 10h 49m 58s.xml">
-      <configuration name="MainTest.benchmarkChannelRead" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_benchmarkChannelRead - 2019.03.16 at 10h 50m 18s.xml">
-      <configuration name="MainTest.benchmarkChannelRead" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_benchmarkNewBufferedReadReadPerformance - 2019.03.16 at 10h 59m 42s.xml">
-      <configuration name="MainTest.benchmarkNewBufferedReadReadPerformance" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_benchmarkNewBufferedReadReadPerformance - 2019.03.16 at 11h 01m 02s.xml">
-      <configuration name="MainTest.benchmarkNewBufferedReadReadPerformance" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_benchmarkNewBufferedReadReadPerformance - 2019.03.16 at 11h 09m 28s.xml">
-      <configuration name="MainTest.benchmarkNewBufferedReadReadPerformance" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_benchmarkNewBufferedReadReadPerformance - 2019.03.16 at 11h 09m 58s.xml">
-      <configuration name="MainTest.benchmarkNewBufferedReadReadPerformance" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_benchmarkBufferedInputStreamReadPerformance - 2019.03.16 at 11h 24m 51s.xml">
       <configuration name="MainTest.benchmarkBufferedInputStreamReadPerformance" configurationId="JUnit" />
     </history-entry>
@@ -378,12 +372,29 @@
     <history-entry file="MainTest_benchmarkFileChannelReadPerformance - 2019.03.16 at 23h 24m 39s.xml">
       <configuration name="MainTest.benchmarkFileChannelReadPerformance" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_benchmarkFileChannelReadPerformance - 2019.03.16 at 23h 25m 21s.xml">
+      <configuration name="MainTest.benchmarkFileChannelReadPerformance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.03.16 at 23h 26m 19s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_benchmarkFileInputStreamPerformance - 2019.03.17 at 08h 46m 51s.xml">
+      <configuration name="MainTest.benchmarkFileInputStreamPerformance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_benchmarkFileInputStreamPerformance - 2019.03.17 at 08h 48m 39s.xml">
+      <configuration name="MainTest.benchmarkFileInputStreamPerformance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_benchmarkFileChannelReadPerformance - 2019.03.17 at 08h 54m 41s.xml">
+      <configuration name="MainTest.benchmarkFileChannelReadPerformance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_benchmarkFileInputStreamPerformance - 2019.03.17 at 08h 59m 08s.xml">
+      <configuration name="MainTest.benchmarkFileInputStreamPerformance" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="940" y="0" width="1627" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1869815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,7 +403,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3129103" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31161472" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -414,7 +425,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.44937587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21497585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,8 +433,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31661892" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3129103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,7 +458,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ex 1.2 2 of 3 done." />
-    <option name="LAST_COMMIT_MESSAGE" value="ex 1.2 2 of 3 done." />
+    <MESSAGE value="readers benchmark done" />
+    <option name="LAST_COMMIT_MESSAGE" value="readers benchmark done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/filePath" />
@@ -487,14 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/largeFile.txt">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/channels/ReadableByteChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
@@ -516,38 +520,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/NioReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/channels/FileChannel.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
+        <state relative-caret-position="5066">
+          <caret line="327" column="24" selection-start-line="327" selection-start-column="24" selection-end-line="327" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="697">
           <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/file/Files.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/channels/FileChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="3778" column="64" selection-start-line="3778" selection-start-column="59" selection-end-line="3778" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/BufferedRead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="2346">
+          <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -558,10 +555,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63631">
+          <caret line="3778" column="64" selection-start-line="3778" selection-start-column="59" selection-end-line="3778" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/BufferedRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/BufferedInputStreamReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/largeFile.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -572,24 +602,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/Buffer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/smallFile.txt">
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="327" column="24" selection-start-line="327" selection-start-column="24" selection-end-line="327" selection-end-column="24" />
+        <state>
+          <caret column="88" selection-start-column="88" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/NioReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fileAccess/FileInputStreamReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="187">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        <state relative-caret-position="437">
+          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
         </state>
       </provider>
     </entry>
