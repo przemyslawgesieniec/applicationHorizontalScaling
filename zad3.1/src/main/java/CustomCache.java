@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.BiConsumer;
 
-public class CustomCache<K, V> {
+public class CustomCache<K, V>{
 
     private Map<K, CacheValueObject> cache;
     private int maxSize;
@@ -97,19 +97,14 @@ public class CustomCache<K, V> {
 
     private void cleaningDemon() {
 
-        System.out.println("demon creation");
-
         Thread cleaningDemon = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
-                    System.out.println("try to create");
                     final long objectTTLms = objectTTL * 1000;
-                    Thread.sleep(-objectTTL * 1000);
+                    Thread.sleep(objectTTL * 1000);
                     cache.entrySet().removeIf(e -> System.currentTimeMillis() - e.getValue().lastAccess > objectTTLms);
-                    System.out.println("demon created");
 
                 } catch (InterruptedException e) {
-                    System.out.println("cannot clean");
                     Thread.currentThread().interrupt();
                 }
             }
